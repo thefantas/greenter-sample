@@ -138,6 +138,11 @@ HTML;
         echo $content;
     }
 
+    public function writePdf($content, $filename)
+    {
+        $this->writeFile($filename, $content);
+    }
+
     public static function getPathBin()
     {
         $path = __DIR__.'/../vendor/bin/wkhtmltopdf';
